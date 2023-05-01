@@ -1,0 +1,18 @@
+<h1>Number Status:</h1>
+
+<p>Enter a number: <input type="number" [(ngModel)]="number"></p>
+
+<p>Choose a check parameter:
+  <select [(ngModel)]="chk">
+    <option value="Prime">Prime</option>
+    <option value="Perfect">Perfect</option>
+    <option value="Even">Even</option>
+    <option value="Odd">Odd</option>
+  </select>
+</p>
+
+<p>The status of {{number}} is: {{number | marvellousChk:chk}}</p>
+
+
+
+<router-outlet></router-outlet>
